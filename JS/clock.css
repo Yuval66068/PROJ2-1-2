@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    background-color: #965151;
+}
+
+li {list-style-type: none;}
+
+.dropDown{
+    padding-top: 200px;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+#addTimeZone{
+    width: 10vw;
+    height: 5vh;
+    background-color: #507ec4;
+}
+
+#addTimeZone:hover{
+    background-color: #427fa8;
+}
+

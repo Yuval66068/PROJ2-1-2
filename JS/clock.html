@@ -1,0 +1,33 @@
+<head>
+    <title>Time Zone</title>
+    <link rel="stylesheet" href="clock.css">
+    <script defer src="clock.js"></script>
+  </head>
+  
+  <body>
+
+    <h2>Please Choose a Time Zone and press Add</h2>
+    <div id="addedClock" class="infoContainer" style="display:none">
+      <ol id="newClocks"></ol>
+    </div>
+    <div class="addTimeZone">
+      <div class="dropDown">
+        <form>
+          <label for="timezone">Add Additional Timezone:</label>
+          <select name="timezone" id="timezone">
+            <option value="">Choose</option>
+            <option value="0">Universal Coordinated Time</option>
+            <option value="-5">Eastern Standard</option>
+            <option value="-6">Central Standard</option>
+            <option value="-7">Mountain Standard</option>
+            <option value="-8">Pacific Standard</option>
+          </select>
+        </form>
+      </div>
+      <div class="addBtn">
+        <button id='addTimeZone'>Add</button>
+      </div>
+    </div>
+  </body>
+  
+  </html>

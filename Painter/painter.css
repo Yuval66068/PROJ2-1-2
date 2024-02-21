@@ -1,0 +1,10 @@
+canvas { border: 1px solid #b84747 }
+
+#clear-btn{
+width: 10vw;
+height: 10vh;
+background-color: #244074;
+font-size: 2em;
+font-family: sans-serif;
+color: aquamarine;
+}
