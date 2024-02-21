@@ -1,0 +1,182 @@
+@import './reset.scss';
+$bg-color: #FFFFFF;
+$bg-text:#E5EEFF;
+$title-color: #FDBD03;
+$text-color-1:#020253;
+$text-color-2:#2C2C2C;
+$text-color-3:#000000;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+    
+);
+
+
+
+body {
+
+background-color: $bg-color;
+color: $text-color-2;
+text-align: center;
+overflow-x: hidden;
+direction: rtl;
+
+
+
+}
+
+.header{
+    top: 0px;
+    left: 1486px;
+    width: 434px;
+    height: 18px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+
+.form-input{
+    
+    text-align: right;
+    justify-content: right;
+    padding-right: 882px;
+    padding-top: 434px;
+    
+    
+}
+/*# sourceMappingURL=main.css.map */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    h1{
+        color: $title-color;
+        font-weight: map-get($font-weights,bold);
+        font-size: 3rem;
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        top: 226px;
+        right: 730px;
+        
+
+        
+       
+    
+
+       
+    
+    }
+
+    
+}
+
+p{
+    color: $text-color-1;
+    font-weight: map-get($font-weights, regular );
+    font-size: 1em;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #020253;
+    position: absolute;
+    
+    
+    
+    
+    }
+
+.component1{
+    padding-left: 18px;
+    display: flex;
+    color: $text-color-2;
+    font-size: 1rem;
+    font-weight: map-get($font-weights,bold );
+    
+}
+
+.container-img{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 138px;
+    right: 130px;
+
+}
+
+.component2{
+    width: 300px;
+    height: 50px;
+    background: $bg-text;
+    border-bottom: 4px solid $title-color;
+    opacity: 1;
+    
+}
+
+
+.form-input .button-submit{
+    width: 166px;
+    height: 50px;
+    text-align: center;
+    background: $title-color;
+    color: $text-color-3;
+    font-weight: map-get($font-weights,bold );
+    font-size: 22px;
+    margin-top: 82px;
+    
+    
+    
+    
+    
+}
+
+.container-form{
+    flex-wrap: wrap;
+    justify-content: center;
+     width: 569px;
+     height: 643px;
+     padding-right: 20px;
+     
+     
+}
+
+div .icons{
+    display: grid;
+    background-color: $title-color;
+    border-radius: 50%;
+    margin-left: 38px;
+    margin-bottom: 85spx;
+    float: left;
+    
+}  
+
+.whatsapp{
+    background-color: $title-color;
+    border-radius: 50%;
+    position: absolute;
+    left: 85px;
+    top: 81px;
+    
+
+}
+
+.footer{
+    
+    top: 1247px;
+    left: 0px;
+    width: 1038px;
+    height: 18px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    
+
+}
+
+
+
+

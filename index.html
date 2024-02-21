@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Heebo&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+ 
+
+    <style>
+      body {
+        overflow-x: hidden;
+        width: 100vw;
+        text-align: center;
+      }
+
+      header {
+        direction: rtl;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+        
+        
+      }
+      .navbar {
+        width: 100vw;
+        position: fixed;
+        font-family: heebo, Regular;
+        color: #2c2c2c;
+        text-decoration: none;
+        background-color: white;
+        z-index: 2;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        border-top: solid 2px #1AE0EC;
+        
+      }
+      
+
+      .container-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    
+      }
+        
+
+      .container-nav h2 {
+        font-size: 1.5em;
+        font-family: Dancing Script;
+        padding-left: 17px;
+      }
+
+      
+
+      .navbar .profile-img {
+        border-radius: 50%;
+        width: 62px;
+        height: 62px;
+        transition: all 0.3s ease-in-out;
+        padding-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-img:hover {
+        transform: scale(1.2);
+      }
+
+      .navbar li {
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 10px;
+      }
+      .navbar a {
+        padding-right: 61px;
+        text-decoration: none;
+        font-size: 1em;
+        color: #2c2c2c;
+        font-family: Heebo, Regular;
+      }
+      .navbar a:hover {
+        color: #1ae0ec;
+      }
+      #main {
+        color: #1ae0ec;
+        font-family: Heebo, Bold;
+      }
+
+      .container-div {
+        width: 100vw;
+        height: 461px;
+        background: #13e8f163 0% 0% no-repeat padding-box;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container-div h1 {
+        width: 80vw;
+        font-size: 4rem;
+        font-family: Heebo, Black;
+      }
+
+      .container-div p {
+        width: 50vw;
+        height: 59px;
+        font-size: 1rem;
+        font-family: Heebo, Medium;
+        position: absolute;
+        text-align: center;
+        margin-top: 150px;
+      }
+
+      .icons {
+        width: 100vw;
+        border-bottom: 2px solid #00000029;
+        overflow: hidden;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+          
+        
+      }
+
+      
+      .icons .min-icons {
+        
+        
+        transition: all 0.3s ease-in-out;
+        
+      }
+      .min-icons:hover {
+        transform: scale(1.2);
+      }
+
+      .divpic {
+        width: 100vw;
+        padding-top: 100px;
+        text-align: center;
+        border-radius: 145px 145px 145px 145px;
+      }
+      .divpic span {
+        font-family: Heebo, Black;
+        font-size: 3em;
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        color:#3A3A3A ;
+      }
+      .long-text {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .long-text p {
+        width: 45vw;
+        font-size: 1em;
+        font-family: Heebo, Regular;
+        padding-top: 13px;
+      }
+      .button-download {
+    
+        margin-top: 19px;
+        border-radius: 25px 25px 25px 25px;
+        background-color: #1ae0ec;
+        margin-bottom: 107px;
+        width: 15vw;
+      }
+      .button-download a {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Heebo, Bold;
+      }
+
+      .work-pages{
+        width: 100vw;
+        background-color: #F6F6F6;
+        margin-top: 107px;
+        padding-top: 100px;
+        padding-bottom: 182px;
+        direction: rtl;
+        display: grid;
+        
+      
+        
+       
+      }
+
+      .work-pages .card{
+        margin-left: 50px;
+        margin-bottom: 52px;
+        width:  50vw;
+        height: 80vh;
+        
+        
+        
+        
+        
+      
+        
+        
+      }
+
+
+      .card-text p{
+        font-family: Heebo, sans-serif;
+        font-size: 1em;
+        
+       
+       
+      }
+      .card-icons{
+        text-align: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 28.5px;
+      }
+      .Rectangle14{
+        margin-bottom: 107px;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #1ae0ec;
+        width: 15vw;
+      }
+
+     
+      
+        
+        
+        
+        
+        
+      
+      .card-body a{
+        text-align: center;
+        font-family: Heebo, Medium;
+        text-decoration: none;
+        color: Black;
+        width: 100vw;
+        
+        
+        
+
+      }
+      .work-pages span {
+        font-family: Heebo, Black;
+        font-size: 2.5em;
+        margin-top: 100px;
+        color: #3A3A3A;
+        
+        
+        
+      }
+
+
+      .work-pages h6{ 
+      margin: 0 auto; 
+      font-size: 1rem;
+      font-family: Heebo, Regular;
+      margin-bottom: 68px;
+      width: 35vw;
+      color: #3A3A3A;
+      }
+   
+      
+      
+      
+     
+      .container5{
+        height: 959px;
+        background-image: url(Rectangle\ 41.png);
+        background-repeat: no-repeat;
+        background-color: #3A3A3A;
+        background-size: 40vw;
+        display: flex;
+        justify-content: right;
+        text-align: right;
+        
+        
+        
+        
+      }
+
+  
+      
+      .group101{     
+        direction: rtl;
+        padding-top: 161px;
+        padding-right: 220px;
+        padding-left: 304.5px;
+        
+        
+
+      }
+      
+      .container5  span{
+        color: white;
+        font-size: 3rem;
+        text-align: right;
+        font-family: Heebo, Black;
+        
+        
+      }
+      .container5 p{
+        font-family: Heebo, Regular;
+        color: #FFFFFF;
+        font-size: 1.3em;
+        text-align: right;
+        width: 40vw;
+      }
+
+      .component1{
+        color: white;
+        display: flex;
+        font-family: Heebo, Bold;
+        padding-top: 18px;
+        
+        
+      }
+
+      .component2{
+        display: flex;
+        width: 548px;
+        height: 50px;
+        border-bottom: #1AE0EC 4px solid;
+        
+      }
+
+      .container5 .Rectangle1{
+        text-align: center;
+        border-radius: 25px;
+        background-color: #1ae0ec;
+        margin-top: 42px;
+        width: 166px;
+        height: 50px;
+        font-family: Heebo, Bold;
+        
+        
+      }
+
+      footer{
+        background-color: #1AE0EC;
+        color:#2C2C2C ;
+        height: 200.3px;
+        direction: rtl;
+        padding-top: 65.45px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        
+      
+        
+        
+      }
+      footer img{
+        
+        padding-bottom: 19px;
+        
+      }
+
+      
+      .end-page{
+        background-color: #000000;
+        height: 51px;
+        display: flex;
+        justify-content:stretch;
+        align-items: center;
+        border-bottom: 6.17px solid #1AE0EC ;
+      }
+      
+      .end-page #myname{
+        font-family: Heeno, Regular;
+        font-size: 1.2rem;
+        color: #1AE0EC;
+        position: absolute;
+        left: 29px;
+        
+
+      }
+
+      .end-page #save{
+        font-family: Heeno, Light;
+        font-size: 1.2rem;
+        color: #1AE0EC;
+        position: absolute;
+        right: 21.5px;
+      }
+
+
+
+      @media (max-width: 600px) {
+        .navbar {
+          width: 100vw;
+          height: 15vh;
+          border: 3px solid #1ae0ec;
+          border-left: none;
+          border-right: none;
+          border-bottom: none;
+        }
+
+        .profile-img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 18px;
+        }
+
+        h2 {
+          visibility: hidden;
+        }
+
+        .work-pages{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          justify-content: center;
+          margin: auto;
+        }     
+
+        .dropdown {
+          display: flex;
+        }
+
+        .navbar ul {
+          display: none;
+        }
+
+        .hamburger:hover + .dropdown {
+          display: block;
+        }
+
+       
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--  תפריט ראשי -->
+
+      <div class="navbar">
+        <ul>
+          <li><a href="#" id="main">ראשי</a></li>
+          <li><a href="#">אודות</a></li>
+          <li><a href="#">שירותים</a></li>
+          <li><a href="#">צור קשר</a></li>
+        </ul>
+        <div class="container-nav">
+          <h2>Yuval Tamir</h2>
+          <img class="profile-img" src="profile-image.png" />
+        </div>
+      </div>
+    </header>
+
+    <!-- כותרת וטקסט מתחת לתפריט ראשי -->
+    <div class="container-div">
+      <h1>תיק עבודות</h1>
+      <p>
+        לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+        מקום” בעת עריכה, בתחום הדפוס, ההדפסה והפרסום. למשל: לורםלורם איפסום או
+        בקיצור לי.
+      </p>
+    </div>
+
+    <!-- סמלי השפות -->
+    <div class="icons"> 
+        <img class="min-icons" src="icons/img-HTML.png" />
+        <img class="min-icons" src="icons/img-CSS.png" />
+        <img class="min-icons" src="icons/img-Bootstrap.png" />
+        <img class="min-icons" src="icons/img-SASS.png" />
+        <img class="min-icons" src="icons/img-JS.png" />
+        <img class="min-icons" src="icons/img-OOP.png" />
+        <img class="min-icons" src="icons/img-ES6.png" />
+        <img class="min-icons" src="icons/img-TypeScript.png" />
+        <img class="min-icons" src="icons/img-API.png" />
+        <img class="min-icons" src="icons/img-React.png" />
+        <img class="min-icons" src="icons/img-NodeJS.png" />
+    </div>
+    <!-- תמונה גדולה וטקסט עליי -->
+
+    <div class="divpic">
+      <img src="profile-image@2x.png" />
+      <br />
+      <span>קצת עליי</span>
+    
+    <div class="long-text">
+      <p>
+        שלום, שמי יובל אני בן 30 מנוף הגליל
+        תמיד עניין אותי עולם המחשבים הסתעסקתי בעיקר
+         בתיקונים של מחשבים ורשתות ורציתי להעשיר את הידע שלי בתכנות ובפיתוח אתרים
+         
+      </p>
+    </div>
+  </div>
+
+    <button class="button-download"> <a href="Yuval-CV.pdf">להורדת קורות חיים</a></button>
+
+   <div class="work-pages">
+    <span>עבודות נבחרות
+    <h6>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</h6></span>
+    <div class="container d-flex justify-content-center m-auto">
+      
+      <div class="card" >
+        <img
+          src="pages/p1.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">כאן ועכשיו</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+         
+            <img class="card-icons" src="icons/img-HTML.png" />
+            <img class="card-icons" src="icons/img-CSS.png" />
+            <img class="card-icons" src="icons/img-Bootstrap.png" />
+            <img class="card-icons" src="icons/img-SASS.png" />
+          
+          <button class="Rectangle14">
+          <a href="project-page1.html" >לעמוד הפרויקט >></a>
+        </button>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img
+          src="pages/p2.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">שם הפרויקט</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+         
+          <img class="card-icons" src="icons/img-HTML.png" />
+          <img class="card-icons" src="icons/img-CSS.png" />
+          <img class="card-icons" src="icons/img-Bootstrap.png" />
+          <img class="card-icons" src="icons/img-SASS.png" />
+      
+          <button class="Rectangle14">
+            <a href="project-page2.html" >לעמוד הפרויקט >></a>
+          </button>
+        </div>
+      </div>
+      <div class="card" >
+        <img
+          src="pages/p3.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">שם הפרויקט</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+         
+            <img class="card-icons" src="icons/img-HTML.png" />
+            <img class="card-icons" src="icons/img-CSS.png" />
+            <img class="card-icons" src="icons/img-Bootstrap.png" />
+            <img class="card-icons" src="icons/img-SASS.png" />
+     
+          <button class="Rectangle14">
+            <a href="project-page-3.html" >לעמוד הפרויקט >></a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex justify-content-center m-auto " >
+      <div class="card" >
+        <img
+          src="pages/p4.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body" >
+          <h5 class="card-title">שם הפרויקט</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+    
+            <img class="card-icons" src="icons/img-HTML.png" />
+            <img class="card-icons" src="icons/img-CSS.png" />
+            <img class="card-icons" src="icons/img-Bootstrap.png" />
+            <img class="card-icons" src="icons/img-SASS.png" />
+     
+          <button class="Rectangle14">
+            <a href="project-page-4.html" >לעמוד הפרויקט >></a>
+          </button>
+        </div>
+      </div>
+      <div class="card" >
+        <img
+          src="pages/p5.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">שם הפרויקט</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+
+            <img class="card-icons" src="icons/img-HTML.png" />
+            <img class="card-icons" src="icons/img-CSS.png" />
+            <img class="card-icons" src="icons/img-Bootstrap.png" />
+            <img class="card-icons" src="icons/img-SASS.png" />
+      
+          <button class="Rectangle14">
+            <a href="project-page-5.html" >לעמוד הפרויקט >></a>
+          </button>
+        </div>
+      </div>
+      <div class="card"  >
+        <img
+          src="pages/p6.jpeg"
+          class="card-img-top" 
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">שם הפרויקט</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+         
+            <img class="card-icons" src="icons/img-HTML.png" />
+            <img class="card-icons" src="icons/img-CSS.png" />
+            <img class="card-icons" src="icons/img-Bootstrap.png" />
+            <img class="card-icons" src="icons/img-SASS.png" />
+    
+          <button class="Rectangle14">
+            <a href="project-page-6.html" >לעמוד הפרויקט >></a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-pages">
+    <span> משחקים ותוכנות
+    <h6>  כאן תוכלו לנסות מאפליקציות והמשחקים</h6></span>
+    <div class="container d-flex justify-content-center m-auto">
+      
+      <div class="card" >
+        <img
+          src="./pages/simon.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">משחק סיימון </h5>
+
+          <p class="card-text">
+            
+          </p>נסה לעקוב אחריי הצלילים
+         
+            <img class="card-icons" src="icons/img-JS.png" />
+            <img class="card-icons" src="icons/img-OOP.png" />
+            <img class="card-icons" src="icons/img-ES6.png" />
+            <img class="card-icons" src="icons/img-TypeScript.png" />
+          
+          <button class="Rectangle14">
+          <a href="./Simon Game/app.html" >לאתר  >></a>
+        </button>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img
+          src="pages/timeZone.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">אזורי זמן </h5>
+
+          <p class="card-text">
+            אזורי זמן בעולם
+          </p>
+         
+          <img class="card-icons" src="icons/img-JS.png" />
+          <img class="card-icons" src="icons/img-OOP.png" />
+          <img class="card-icons" src="icons/img-ES6.png" />
+          <img class="card-icons" src="icons/img-TypeScript.png" />
+      
+          <button class="Rectangle14">
+            <a href="./JS/clock.html" >לאתר  >></a>
+          </button>
+        </div>
+      </div>
+      <div class="card" >
+        <img
+          src="pages/painter.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">צייר </h5>
+
+          <p class="card-text">
+            משחק ציור
+          </p>
+         
+          <img class="card-icons" src="icons/img-JS.png" />
+          <img class="card-icons" src="icons/img-OOP.png" />
+          <img class="card-icons" src="icons/img-ES6.png" />
+          <img class="card-icons" src="icons/img-TypeScript.png" />
+     
+          <button class="Rectangle14">
+            <a href="./Painter/painter.html" >לאתר  >></a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex justify-content-center m-auto " >
+      <div class="card" >
+        <img
+          src="pages/list.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body" >
+          <h5 class="card-title">רשימת מטלות </h5>
+
+          <p class="card-text">
+            תכנן את רשימת המטלות שלך
+          </p>
+    
+          <img class="card-icons" src="icons/img-JS.png" />
+          <img class="card-icons" src="icons/img-OOP.png" />
+          <img class="card-icons" src="icons/img-ES6.png" />
+          <img class="card-icons" src="icons/img-TypeScript.png" />
+     
+          <button class="Rectangle14">
+            <a href="./List/list.html" >לאתר  >></a>
+          </button>
+        </div>
+      </div>
+      <div class="card" >
+        <img
+          src="pages/p5.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">שם הפרויקט</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+
+          <img class="card-icons" src="icons/img-JS.png" />
+          <img class="card-icons" src="icons/img-OOP.png" />
+          <img class="card-icons" src="icons/img-ES6.png" />
+          <img class="card-icons" src="icons/img-TypeScript.png" />
+      
+          <button class="Rectangle14">
+            <a href="project-page-5.html" > לאתר >></a>
+          </button>
+        </div>
+      </div>
+      <div class="card"  >
+        <img
+          src="pages/p6.jpeg"
+          class="card-img-top" 
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">שם הפרויקט</h5>
+
+          <p class="card-text">
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+          </p>
+         
+          <img class="card-icons" src="icons/img-JS.png" />
+          <img class="card-icons" src="icons/img-OOP.png" />
+          <img class="card-icons" src="icons/img-ES6.png" />
+          <img class="card-icons" src="icons/img-TypeScript.png" />
+    
+          <button class="Rectangle14">
+            <a href="project-page-6.html" >לאתר  >></a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container5">
+    <div class="container-form">
+      <form class="group101">
+      
+      <span>צור קשר</span>
+        <p>
+          לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.
+        </p>
+      
+      
+          <label class="component1">שם מלא</label>
+          <input class="component2" type="text" id="fname" name="firstname" >
+        
+      
+    
+          <label class="component1">דוא"ל</label>
+          <input class="component2" type="text" id="email" name="email" >
+        
+     
+      
+          <label class="component1">טלפון</label>
+          <input class="component2" type="text" id="phone" name="phone" >
+        
+      
+     
+          <label class="component1" for="subject">תוכן ההודעה</label>
+          <textarea  class="component2" name="subject"  style=" width: 548px; height: 100px; resize: none;"></textarea>
+        
+      
+      
+    
+    <button class="Rectangle1">
+      <a href="#" type="submit" style="color: black; text-decoration: none;" >שליחה</a>
+    </button>
+    </form>
+  </div>
+</div>
+
+  <footer>
+    <figure>
+      <img src="icons/Icon awesome-facebook-f.png" >
+      <figcaption>Yuval Tamir</figcaption>
+    </figure>
+    <figure>
+      <img src="icons/Icon awesome-linkedin-in.png" >
+      <figcaption>Yuval Tamir</figcaption>
+    </figure>
+    <figure>
+      <img src="icons/Icon simple-phone.png" >
+      <figcaption>054-9197755</figcaption>
+    </figure>
+    <figure>
+      <img src="icons/Icon simple-whatsapp.png" >
+      <figcaption>054-9197755</figcaption>
+    </figure>
+    <figure>
+      <img src="icons/Icon simple-email.png" >
+      <figcaption>tamiry68@gmail.com</figcaption>
+    </figure>
+    <figure>
+      <img src="icons/Icon material-location-on.png" >
+      <figcaption>רימון 8, נוף הגליל</figcaption>
+    </figure>
+  </footer>
+
+  <div class="end-page">
+    <span id="myname">Yuval Tamir</span>
+    <span id="save">כל הזכויות שמורות</span>
+  </div>
+  
+    
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
