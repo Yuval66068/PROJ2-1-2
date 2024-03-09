@@ -41,13 +41,9 @@
 
       header {
         direction: rtl;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-       
-        
-        
+ 
       }
+
       .navbar {
         width: 100vw;
         position: fixed;
@@ -164,13 +160,13 @@
         transform: scale(1.2);
       }
 
-      .divpic {
+      #divpic {
         width: 100vw;
         padding-top: 100px;
         text-align: center;
         border-radius: 145px 145px 145px 145px;
       }
-      .divpic span {
+      #divpic span {
         font-family: Heebo, Black;
         font-size: 3em;
         margin-top: 24px;
@@ -206,34 +202,28 @@
         font-family: Heebo, Bold;
       }
 
-      .work-pages{
-        width: 100vw;
-        background-color: #F6F6F6;
-        margin-top: 107px;
-        padding-top: 100px;
-        padding-bottom: 182px;
-        direction: rtl;
-        display: grid;
-        
       
+
+      #work-pages{
+        background-color: #F6F6F6;
+        direction: rtl;
+        margin-top: 100px;
         
-       
+
       }
 
-      .work-pages .card{
-        margin-left: 50px;
-        margin-bottom: 52px;
-        width:  50vw;
-        height: 80vh;
+      .container-card{
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 1% 5%;
+        margin: 0 auto;
         
         
-        
-        
-        
-      
-        
-        
+    
       }
+
+      
 
 
       .card-text p{
@@ -275,10 +265,9 @@
         
 
       }
-      .work-pages span {
+      #work-pages span {
         font-family: Heebo, Black;
         font-size: 2.5em;
-        margin-top: 100px;
         color: #3A3A3A;
         
         
@@ -286,7 +275,7 @@
       }
 
 
-      .work-pages h6{ 
+      #work-pages h6{ 
       margin: 0 auto; 
       font-size: 1rem;
       font-family: Heebo, Regular;
@@ -299,7 +288,7 @@
       
       
      
-      .container5{
+      #container5{
         height: 959px;
         background-image: url(Rectangle\ 41.png);
         background-repeat: no-repeat;
@@ -308,6 +297,8 @@
         display: flex;
         justify-content: right;
         text-align: right;
+        margin-top: 100px;
+        
         
         
         
@@ -326,7 +317,7 @@
 
       }
       
-      .container5  span{
+      #container5  span{
         color: white;
         font-size: 3rem;
         text-align: right;
@@ -334,7 +325,7 @@
         
         
       }
-      .container5 p{
+      #container5 p{
         font-family: Heebo, Regular;
         color: #FFFFFF;
         font-size: 1.3em;
@@ -359,7 +350,7 @@
         
       }
 
-      .container5 .Rectangle1{
+      #container5 .Rectangle1{
         text-align: center;
         border-radius: 25px;
         background-color: #1ae0ec;
@@ -422,6 +413,7 @@
 
 
       @media (max-width: 600px) {
+
         .navbar {
           width: 100vw;
           height: 15vh;
@@ -429,6 +421,7 @@
           border-left: none;
           border-right: none;
           border-bottom: none;
+          
         }
 
         .profile-img {
@@ -438,23 +431,160 @@
           left: 18px;
         }
 
+        .container-div {
+          width: 100vw;
+          
+          
+        }
+
+        .container-div h1{
+          width: 100vw;
+          font-size: 2.3rem;
+      
+        }
+
+        .container-div p{
+          font-size: 0.8rem;
+          width: 80vw;
+        }
+
         h2 {
           visibility: hidden;
         }
 
-        .work-pages{
+        .icons .min-icons {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+     
+        }
+
+        .icons .min-icons{
+          width: 30vw;
+        }
+        
+        .long-text{
+          font-size: 0.8rem;
+          width: 100vw;
+        }
+
+        #work-pages h6{
+          font-size: 0.8rem;
+          width: 80vw;
+
+        }
+
+        .button-download{
+          width: 45vw;
+        }
+
+        .button-download a{
+          font-size: 0.8rem;
+        }
+
+        #work-pages{
+          width: 100vw;
+          
+        }
+
+        #work-pages .container-card{
+          margin-top: 50px;
+        }
+
+
+        #divpic img{
+          width: 50vw;
+        }
+        
+
+        .container-card{
           display: grid;
           grid-template-columns: repeat(1, 1fr);
+          gap: 15px;
+         
+        }
+
+        .card-body .card-text{
+          font-size: 0.8rem;
+          width: 70vw;
+        }
+
+        .Rectangle14{
+          width: 35vw;
+        }
+
+        .Rectangle14 a{
+          font-size: 0.8rem;
+          
+        }
+
+        #container5{
+          display: flex;
           justify-content: center;
-          margin: auto;
-        }     
+          align-items: center;
+          width: 100vw
+        }
+
+        .group101 {
+        width: 1vw;
+        }
+
+        #container5 p{
+          font-size: 0.8rem;
+          width: 65vw;
+        }
+        
+        #container5 span{
+          font-size: 2rem;
+        }
+
+        #container5 .component2{
+          width: 130px;
+          height: 30px;
+        }
+        
+       .Rectangle1  a{
+        font-size: 1em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+       }
+
+    
 
         .dropdown {
           display: flex;
+          direction: rtl;
         }
 
         .navbar ul {
           display: none;
+        }
+
+        .pers figure img{
+          
+          width: 10vw;
+          display: grid;
+          grid-template-columns: repeat(2,3fr);
+          
+          
+          
+        }
+
+      
+
+       
+
+        
+        
+
+        .end-page #myname{
+          font-size: 0.8em;
+        }
+
+        .end-page #save{
+          font-size: 0.8em;
         }
 
         .hamburger:hover + .dropdown {
@@ -467,14 +597,13 @@
   </head>
   <body>
     <header>
-      <!--  תפריט ראשי -->
 
       <div class="navbar">
         <ul>
           <li><a href="#" id="main">ראשי</a></li>
-          <li><a href="#">אודות</a></li>
-          <li><a href="#">שירותים</a></li>
-          <li><a href="#">צור קשר</a></li>
+          <li><a href="#divpic" >אודות</a></li>
+          <li><a href="#work-pages">שירותים</a></li>
+          <li><a href="#container5">צור קשר</a></li>
         </ul>
         <div class="container-nav">
           <h2>Yuval Tamir</h2>
@@ -509,7 +638,7 @@
     </div>
     <!-- תמונה גדולה וטקסט עליי -->
 
-    <div class="divpic">
+    <div id="divpic">
       <img src="profile-image@2x.png" />
       <br />
       <span>קצת עליי</span>
@@ -524,12 +653,12 @@
     </div>
   </div>
 
-    <button class="button-download"> <a href="Yuval-CV.pdf">להורדת קורות חיים</a></button>
+    <button class="button-download"> <a href="../yuvalCV.pdf">להורדת קורות חיים</a></button>
 
-   <div class="work-pages">
+   <div id="work-pages">
     <span>עבודות נבחרות
     <h6>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</h6></span>
-    <div class="container d-flex justify-content-center m-auto">
+    <div class="container-card">
       
       <div class="card" >
         <img
@@ -580,6 +709,7 @@
           </button>
         </div>
       </div>
+
       <div class="card" >
         <img
           src="pages/p3.jpeg"
@@ -604,9 +734,9 @@
           </button>
         </div>
       </div>
-    </div>
+    
 
-    <div class="container d-flex justify-content-center m-auto " >
+    
       <div class="card" >
         <img
           src="pages/p4.jpeg"
@@ -631,6 +761,7 @@
           </button>
         </div>
       </div>
+      
       <div class="card" >
         <img
           src="pages/p5.jpeg"
@@ -655,13 +786,14 @@
           </button>
         </div>
       </div>
+
       <div class="card"  >
         <img
           src="pages/p6.jpeg"
           class="card-img-top" 
           alt="..."
         />
-
+        
         <div class="card-body">
           <h5 class="card-title">שם הפרויקט</h5>
 
@@ -680,18 +812,22 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="work-pages">
+    
+   
+  
+
+    
     <span> משחקים ותוכנות
     <h6>  כאן תוכלו לנסות מאפליקציות והמשחקים</h6></span>
-    <div class="container d-flex justify-content-center m-auto">
+    <div class="container-card">
+    
       
       <div class="card" >
         <img
           src="./pages/simon.jpg"
           class="card-img-top"
-          alt="..."
+          alt="Saemon Game"
         />
 
         <div class="card-body">
@@ -707,11 +843,11 @@
             <img class="card-icons" src="icons/img-TypeScript.png" />
           
           <button class="Rectangle14">
-          <a href="./Simon Game/app.html" >לאתר  >></a>
+          <a href="./prGame1.html" >לאתר  >></a>
         </button>
         </div>
       </div>
-
+      
       <div class="card" >
         <img
           src="pages/timeZone.jpg"
@@ -732,7 +868,7 @@
           <img class="card-icons" src="icons/img-TypeScript.png" />
       
           <button class="Rectangle14">
-            <a href="./JS/clock.html" >לאתר  >></a>
+            <a href="./prGame2.html" >לאתר  >></a>
           </button>
         </div>
       </div>
@@ -756,13 +892,13 @@
           <img class="card-icons" src="icons/img-TypeScript.png" />
      
           <button class="Rectangle14">
-            <a href="./Painter/painter.html" >לאתר  >></a>
+            <a href="./prGame3.html" >לאתר  >></a>
           </button>
         </div>
       </div>
-    </div>
+    
 
-    <div class="container d-flex justify-content-center m-auto " >
+    
       <div class="card" >
         <img
           src="pages/list.jpg"
@@ -783,19 +919,20 @@
           <img class="card-icons" src="icons/img-TypeScript.png" />
      
           <button class="Rectangle14">
-            <a href="./List/list.html" >לאתר  >></a>
+            <a href="./prGame4.html" >לאתר  >></a>
           </button>
         </div>
       </div>
+
       <div class="card" >
         <img
-          src="pages/p5.jpeg"
+          src="pages/register.jpg"
           class="card-img-top"
           alt="..."
         />
 
         <div class="card-body">
-          <h5 class="card-title">שם הפרויקט</h5>
+          <h5 class="card-title">רשימת משתמשים </h5>
 
           <p class="card-text">
             לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
@@ -807,10 +944,11 @@
           <img class="card-icons" src="icons/img-TypeScript.png" />
       
           <button class="Rectangle14">
-            <a href="project-page-5.html" > לאתר >></a>
+            <a href="prGame5.html" > לאתר >></a>
           </button>
         </div>
       </div>
+
       <div class="card"  >
         <img
           src="pages/p6.jpeg"
@@ -836,9 +974,18 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
+  
 
-  <div class="container5">
+
+      
+  
+
+
+
+
+
+  <div id="container5">
     <div class="container-form">
       <form class="group101">
       
@@ -875,8 +1022,8 @@
     </form>
   </div>
 </div>
-
-  <footer>
+<div>
+  <footer >
     <figure>
       <img src="icons/Icon awesome-facebook-f.png" >
       <figcaption>Yuval Tamir</figcaption>
@@ -903,10 +1050,12 @@
     </figure>
   </footer>
 
+
   <div class="end-page">
     <span id="myname">Yuval Tamir</span>
     <span id="save">כל הזכויות שמורות</span>
   </div>
+  
   
     
     
